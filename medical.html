@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Emergency Medical App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Emergency Medical App</h1>
+        <button id="loginBtn">Login</button>
+    </div>
+
+    <div id="loginForm" class="hidden">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="saveLogin">Save</button>
+    </div>
+
+    <div id="profileForm" class="hidden">
+        <h2>User Profile</h2>
+        <form id="medicalForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="date" id="dob" required>
+            <input type="text" id="bloodGroup" placeholder="Blood Group" required>
+            <textarea id="pastMedicalHistory" placeholder="Past Medical History" required></textarea>
+            <input type="number" id="weight" placeholder="Weight (kg)" required>
+            <input type="number" id="height" placeholder="Height (cm)" required>
+            <input type="text" id="allergies" placeholder="Allergies" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="text" id="emergencyContact" placeholder="Emergency Contact Number" required>
+            <input type="email" id="emergencyEmail" placeholder="Emergency Email" required>
+            <button type="button" id="saveProfile">Save</button>
+        </form>
+        <button id="sosBtn" class="sos-button">SOS</button>
+    </div>
+
+    <div id="alertPopup" class="hidden">Alert Sent!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
