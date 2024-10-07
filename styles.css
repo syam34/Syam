@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #add8e6; /* Light blue color */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack fields vertically */
+    align-items: center; /* Center align the fields */
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 400px; /* Set a max width */
+    padding: 10px;
+    margin: 5px 0; /* Vertical margin to space out fields */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#alertPopup {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 5px;
+}
+
+.sos-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
